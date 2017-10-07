@@ -1,0 +1,31 @@
+{
+  "name": "oceanencrypting",
+  "version": "1.0.0",
+  "description": "A simple security to your own objects",
+  "main": "index.js",
+  "scripts": {
+    "run" : "node index.js",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rodsafreitas/OceanEncrypting.git"
+  },
+  "keywords": [
+    "security",
+    "encrypting",
+    "data",
+    "objects",
+    "ocean"
+  ],
+  "author": "Rods Freitas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rodsafreitas/OceanEncrypting/issues"
+  },
+  "homepage": "https://github.com/Rodsafreitas/OceanEncrypting#readme",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "mocha": "^4.0.1"
+  }
+}
