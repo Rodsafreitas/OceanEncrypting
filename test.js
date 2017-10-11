@@ -7,9 +7,9 @@ describe('Testing with data', function(){
 
 		var nome = "rods";
 		
-		var data = index.setEncrypting(nome);
+		var data = index.setEncrypting(nome,'$ad@');
 
-		var getValue = index.getData(data);
+		var getValue = index.getData(data,'$ad@');
 
 		assert.equal(nome,getValue,"wrong values");
 
@@ -18,11 +18,22 @@ describe('Testing with data', function(){
 	it('the value is different', function(){
 		var nome = "rods";
 
-		var data = index.setEncrypting(nome);
+		var data = index.setEncrypting(nome,'$ad@');
 
-		var getValue = index.getData("outro_nome");
+		var getValue = index.getData("outro_nome",'$ad@');
 
 		assert.notEqual(nome,getValue,"not to be equal");
 
 	});
+
+	it('the value is different', function (){
+		var nome = "rods";
+		
+		var data = index.setEncrypting(nome,'$fd@');
+
+		var getValue = index.getData(data,'$ad@');
+
+		assert.notEqual(nome,getValue,"wrong keys");
+	});
+
 });
