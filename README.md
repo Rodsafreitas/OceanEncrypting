@@ -15,10 +15,6 @@ Pass the value and a key to function setEncrypting and will return a data protec
 
 To get the value translated just call the getData passing the data protected and the key used and will return a value no encrypted.
 
-To install packages:
-
-npm run
-
 To run the test page just set on prompt:
 
 npm test
