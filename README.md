@@ -7,15 +7,15 @@ Crypto : 1.0.1
 
 Mocha : 4.0.1
 
-Just install the package using :
+Just install the package to start using :
 
 npm install OceanEncrypting --save
 
-Pass the value to function setEncrypting and will return a data protected.
+Pass the value and a key to function setEncrypting and will return a data protected.
 
-To get the value translated just call the getData passing the data protected and will return a value no encrypted.
+To get the value translated just call the getData passing the data protected and the key used and will return a value no encrypted.
 
-To run the script:
+To install packages:
 
 npm run
 
