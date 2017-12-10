@@ -1,19 +1,21 @@
 # OceanEncrypting 3.0
 A simple security to your own objects.
 
-Dependencies:
+##Dependencies:
 
 Crypto : 1.0.1
 
 Mocha : 4.0.1
 
+##How use 
+
 Just install the package to start using :
 
 npm install oceanencrypting --save
 
-Pass the value and a key to function setEncrypting and will return a data protected.
+Pass the value and if you wish a key to the function setEncrypting and will return a data protected.
 
-To get the value translated just call the getData passing the data protected and the key used and will return a value no encrypted.
+To get the value translated just call the getData passing the data protected and the key (or if you didn't pass before, keep without key) and will return a value no encrypted.
 
 To run the test page just set on prompt:
 
