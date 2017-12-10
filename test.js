@@ -2,8 +2,8 @@ var index = require('./index.js');
 var assert = require('assert');
 
 
-describe('Testing with data', function(){
-	it('the value is equal', function(){
+describe('Testing with data', () => {
+	it('the value is equal', () => {
 
 		var nome = "rods";
 		
@@ -15,7 +15,7 @@ describe('Testing with data', function(){
 
 	});
 
-	it('the value is different', function(){
+	it('the value is different', () => {
 		var nome = "rods";
 
 		var data = index.setEncrypting(nome,'$ad@');
@@ -26,7 +26,7 @@ describe('Testing with data', function(){
 
 	});
 
-	it('the value is different', function (){
+	it('the value is different',() => {
 		var nome = "rods";
 		
 		var data = index.setEncrypting(nome,'$fd@');
@@ -36,4 +36,15 @@ describe('Testing with data', function(){
 		assert.notEqual(nome,getValue,"wrong keys");
 	});
 
+	it('the key is not passed so, it is randomized', () => {
+
+		var nome = "rods";
+
+		var data = index.setEncrypting(nome);
+
+		var getValue = index.getData(data);
+
+		assert.equal(nome,getValue,"equal values");		
+
+	});
 });
