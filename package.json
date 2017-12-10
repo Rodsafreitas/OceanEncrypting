@@ -1,6 +1,6 @@
 {
   "name": "oceanencrypting",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A simple security to your own objects",
   "main": "index.js",
   "scripts": {
