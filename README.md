@@ -1,13 +1,13 @@
 # OceanEncrypting 3.0
 A simple security to your own objects.
 
-##Dependencies:
+## Dependencies:
 
 Crypto : 1.0.1
 
 Mocha : 4.0.1
 
-##How use 
+## How use 
 
 Just install the package to start using :
 
